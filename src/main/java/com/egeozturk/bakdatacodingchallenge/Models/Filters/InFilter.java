@@ -19,10 +19,10 @@ public class InFilter implements IFilter {
     @Override
     public String toSql() {
         String valuesString = valueList.stream()
-            .map(value -> APOSTROPHE + value + APOSTROPHE)
-            .collect(Collectors.joining(COMMA + SPACE));
+            .map(value -> "'" + value + "'")
+            .collect(Collectors.joining("," + " "));
 
-        return column + SPACE + FILTER_KEYWORD + SPACE + LEFT_PARENTHESES + valuesString + RIGHT_PARENTHESES;
+        return column + " " + FILTER_KEYWORD + " " + "(" + valuesString + ")";
     }
 
 }

@@ -22,8 +22,8 @@ public class QueryNode implements INode {
         String selectColumnsString = selectColumnList.stream()
             .collect(Collectors.joining(", "));
 
-        String selectLine = SELECT + SPACE + selectColumnsString + NEXT_LINE;
-        String fromLine = FROM + SPACE + table + NEXT_LINE;
+        String selectLine = SELECT + " " + selectColumnsString + NEXT_LINE;
+        String fromLine = FROM + " " + table + NEXT_LINE;
 
         String filterLines = "";
 
@@ -31,11 +31,11 @@ public class QueryNode implements INode {
         {
             if (i == 0)
             {
-                filterLines = filterLines.concat(WHERE + SPACE + filterList.get(i).toSql() + NEXT_LINE);
+                filterLines = filterLines.concat(WHERE + " " + filterList.get(i).toSql() + NEXT_LINE);
                 continue;
             }
 
-            filterLines = filterLines.concat(BIG_SPACE + AND + SPACE + filterList.get(i).toSql() + NEXT_LINE);
+            filterLines = filterLines.concat(BIG_SPACE + AND + " " + filterList.get(i).toSql() + NEXT_LINE);
         }
 
         return selectLine + fromLine + filterLines;

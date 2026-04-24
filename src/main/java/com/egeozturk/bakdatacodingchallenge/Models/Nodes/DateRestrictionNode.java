@@ -42,7 +42,7 @@ public class DateRestrictionNode implements INode {
 
     private String toSqlDateFilter(String filterKeyword, String date)
     {
-        return BIG_SPACE + AND + SPACE + column + SPACE + filterKeyword + SPACE + TO_DATE + LEFT_PARENTHESES + APOSTROPHE + date + APOSTROPHE + RIGHT_PARENTHESES + NEXT_LINE;
+        return BIG_SPACE + AND + " " + column + " " + filterKeyword + " " + TO_DATE + "(" + "'" + date + "'" + ")" + NEXT_LINE;
     }
     
 }

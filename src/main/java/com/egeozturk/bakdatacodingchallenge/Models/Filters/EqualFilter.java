@@ -15,6 +15,6 @@ public class EqualFilter implements IFilter{
 
     @Override
     public String toSql() {
-        return column + SPACE + FILTER_KEYWORD + SPACE + APOSTROPHE + value + APOSTROPHE;
+        return column + " " + FILTER_KEYWORD + " " + "'" + value + "'";
     }
 }
