@@ -31,11 +31,11 @@ public class QueryNode implements INode {
         {
             if (i == 0)
             {
-                filterLines = filterLines.concat(WHERE + " " + filterList.get(i).toSql() + NEXT_LINE);
+                filterLines += WHERE + " " + filterList.get(i).toSql() + NEXT_LINE;
                 continue;
             }
 
-            filterLines = filterLines.concat(BIG_SPACE + AND + " " + filterList.get(i).toSql() + NEXT_LINE);
+            filterLines += BIG_SPACE + AND + " " + filterList.get(i).toSql() + NEXT_LINE;
         }
 
         return selectLine + fromLine + filterLines;

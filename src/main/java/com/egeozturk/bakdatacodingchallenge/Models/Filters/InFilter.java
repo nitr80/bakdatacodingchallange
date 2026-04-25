@@ -11,9 +11,9 @@ public class InFilter implements IFilter {
     private final List<String> valueList;
     private final String column;
 
-    public InFilter(String column, List<String> values) {
+    public InFilter(String column, List<String> valueList) {
         this.column = column;
-        this.valueList = values;
+        this.valueList = valueList;
     }
 
     @Override

@@ -29,7 +29,7 @@ public class DateRestrictionNode implements INode {
 
         if (minDate != null)
         {
-            childQueryString = toSqlDateFilter(GREATER_EQUAL, minDate);
+            childQueryString += toSqlDateFilter(GREATER_EQUAL, minDate);
         }
 
         if (maxDate != null)
