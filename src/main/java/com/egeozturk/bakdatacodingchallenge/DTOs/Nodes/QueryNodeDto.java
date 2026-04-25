@@ -7,7 +7,7 @@ import com.egeozturk.bakdatacodingchallenge.DTOs.Filters.BaseFilterDto;
 public class QueryNodeDto extends BaseNodeDto {
     private String table;
     private List<BaseFilterDto> filters;
-    private String select;
+    private List<String> select;
 
     public String getTable() {
         return table;
@@ -17,7 +17,8 @@ public class QueryNodeDto extends BaseNodeDto {
         return filters;
     }
 
-    public String getSelect() {
+    public List<String> getSelect() {
         return select;
     }
+
 }

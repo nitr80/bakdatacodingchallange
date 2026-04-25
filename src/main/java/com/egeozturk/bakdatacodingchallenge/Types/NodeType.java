@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.DTOs.Nodes;
+package com.egeozturk.bakdatacodingchallenge.Types;
 
 public enum NodeType {
     QUERY,

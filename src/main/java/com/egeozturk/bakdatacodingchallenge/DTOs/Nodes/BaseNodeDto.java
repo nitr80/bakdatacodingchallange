@@ -1,6 +1,7 @@
 package com.egeozturk.bakdatacodingchallenge.DTOs.Nodes;
 
 import com.egeozturk.bakdatacodingchallenge.Models.Nodes.DateRestrictionNode;
+import com.egeozturk.bakdatacodingchallenge.Types.NodeType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
