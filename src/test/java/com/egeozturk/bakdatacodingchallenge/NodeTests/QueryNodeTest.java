@@ -13,7 +13,7 @@ import com.egeozturk.bakdatacodingchallenge.Models.Nodes.QueryNode;
 public class QueryNodeTest {
 
     @Test
-    void shouldConvertToSqlString() {
+    public void shouldConvertToSqlString() {
         ArrayList<IFilter> filterList = new ArrayList<>();
         ArrayList<String> inFilterValueList = new ArrayList<>();
         filterList.add(new EqualFilter("column1", "a"));

@@ -2,11 +2,11 @@ package com.egeozturk.bakdatacodingchallenge.Models.Filters;
 
 import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
 
-public class EqualFilter implements IFilter{
-    private final String FILTER_KEYWORD = "=";
-
-    private final String value;
-    private final String column;
+public record EqualFilter (
+    String column,
+    String value
+) implements IFilter{
+    private static final String FILTER_KEYWORD = "=";
 
     public EqualFilter(String column, String value) {
         this.column = column;

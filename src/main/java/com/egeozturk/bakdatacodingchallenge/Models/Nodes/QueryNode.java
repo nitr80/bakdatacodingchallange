@@ -6,14 +6,15 @@ import java.util.stream.Collectors;
 import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
 import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
 
-public class QueryNode implements INode {
-    private final String table;
-    private final List<IFilter> filterList;
-    private final List<String> selectColumnList;
-
+public record QueryNode (
+    List<IFilter> filterList,
+    List<String> selectColumnList,
+    String table
+) implements INode {
+    
     public QueryNode(List<IFilter> filterList, List<String> selectColumnList, String table) {
-        this.filterList = filterList;
-        this.selectColumnList = selectColumnList;
+        this.filterList = List.copyOf(filterList);
+        this.selectColumnList = List.copyOf(selectColumnList);
         this.table = table;
     }
 

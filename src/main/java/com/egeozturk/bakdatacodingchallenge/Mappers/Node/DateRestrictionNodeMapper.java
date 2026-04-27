@@ -21,8 +21,8 @@ public class DateRestrictionNodeMapper implements INodeMapper {
 
         return new DateRestrictionNode(
             dateRestrictionNodeDto.getColumn(),
-            dateRestrictionNodeDto.getMinDate(),
             dateRestrictionNodeDto.getMaxDate(),
+            dateRestrictionNodeDto.getMinDate(),
             (QueryNode) NodeMapperRegistry.mapDtoToModel(dateRestrictionNodeDto.getChild())
         );
     }

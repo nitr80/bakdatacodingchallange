@@ -4,17 +4,16 @@ import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
 
 import jakarta.annotation.Nullable;
 
-public class DateRestrictionNode implements INode {
-    private final String GREATER_EQUAL = ">=";
-    private final String LESS_EQUAL = "<=";
-    private final String TO_DATE = "to_date";
+public record DateRestrictionNode (
+    String column,
+    String maxDate,
+    String minDate,
+    QueryNode child
+) implements INode {
+    private static final String GREATER_EQUAL = ">=";
+    private static final String LESS_EQUAL = "<=";
+    private static final String TO_DATE = "to_date";
 
-    @Nullable
-    private final String minDate;
-    @Nullable
-    private final String maxDate;
-    private final String column;
-    private final QueryNode child;
 
     public DateRestrictionNode(String column, @Nullable String maxDate, @Nullable String minDate, QueryNode child) {
         this.column = column;

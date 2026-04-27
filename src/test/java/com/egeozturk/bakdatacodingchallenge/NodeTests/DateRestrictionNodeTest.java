@@ -13,7 +13,7 @@ import com.egeozturk.bakdatacodingchallenge.Models.Nodes.QueryNode;
 class DateRestrictionNodeTest {
 
     @Test
-    void shouldAppendDateRestriction_whenChildHasWhere() {
+    public void shouldAppendDateRestriction_whenChildHasNoWhere() {
         ArrayList<IFilter> filterList = new ArrayList<>();
         filterList.add(new EqualFilter("column1", "a"));
 

@@ -1,6 +1,5 @@
 package com.egeozturk.bakdatacodingchallenge.DTOs.Nodes;
 
-import com.egeozturk.bakdatacodingchallenge.Models.Nodes.DateRestrictionNode;
 import com.egeozturk.bakdatacodingchallenge.Types.NodeType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -13,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 )
 @JsonSubTypes({
     @JsonSubTypes.Type(value= QueryNodeDto.class, name= "QUERY"),
-    @JsonSubTypes.Type(value= DateRestrictionNode.class, name= "DATE_RESTRICTION")
+    @JsonSubTypes.Type(value= DateRestrictionNodeDto.class, name= "DATE_RESTRICTION")
 })
 public abstract class BaseNodeDto {
     private NodeType type;

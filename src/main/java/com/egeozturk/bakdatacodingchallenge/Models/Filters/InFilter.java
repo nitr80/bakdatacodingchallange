@@ -5,15 +5,15 @@ import java.util.stream.Collectors;
 
 import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
 
-public class InFilter implements IFilter {
-    private final String FILTER_KEYWORD = "IN";
-
-    private final List<String> valueList;
-    private final String column;
+public record InFilter (
+    String column,
+    List<String> valueList
+) implements IFilter {
+    private static final String FILTER_KEYWORD = "IN";
 
     public InFilter(String column, List<String> valueList) {
         this.column = column;
-        this.valueList = valueList;
+        this.valueList = List.copyOf(valueList);
     }
 
     @Override
