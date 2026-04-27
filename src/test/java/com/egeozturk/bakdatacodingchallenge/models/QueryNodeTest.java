@@ -9,6 +9,7 @@ import com.egeozturk.bakdatacodingchallenge.models.filters.EqualFilter;
 import com.egeozturk.bakdatacodingchallenge.models.filters.InFilter;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 import com.egeozturk.bakdatacodingchallenge.models.nodes.QueryNode;
+import com.egeozturk.bakdatacodingchallenge.sql.dialects.PostgreSqlDialect;
 
 public class QueryNodeTest {
 
@@ -39,7 +40,7 @@ public class QueryNodeTest {
 
         assertEquals(
             expectedString,
-            queryNode.toSql()
+            queryNode.toSql(new PostgreSqlDialect())
         );
     }
 
@@ -63,7 +64,7 @@ public class QueryNodeTest {
 
         assertEquals(
             expectedString,
-            queryNode.toSql()
+            queryNode.toSql(new PostgreSqlDialect())
         );
     }
 }

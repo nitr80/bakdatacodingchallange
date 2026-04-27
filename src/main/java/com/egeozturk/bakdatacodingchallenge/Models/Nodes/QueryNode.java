@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
+import com.egeozturk.bakdatacodingchallenge.sql.ISqlDialect;
 
 public record QueryNode (
     List<IFilter> filterList,
@@ -19,26 +20,7 @@ public record QueryNode (
     }
 
     @Override
-    public String toSql() {
-        String selectColumnsString = selectColumnList.stream()
-            .collect(Collectors.joining(", "));
-
-        String selectLine = SELECT + " " + selectColumnsString + NEXT_LINE;
-        String fromLine = FROM + " " + table + NEXT_LINE;
-
-        String filterLines = "";
-
-        for (int i = 0; i < filterList.size(); i++)
-        {
-            if (i == 0)
-            {
-                filterLines += WHERE + " " + filterList.get(i).toSql() + NEXT_LINE;
-                continue;
-            }
-
-            filterLines += BIG_SPACE + AND + " " + filterList.get(i).toSql() + NEXT_LINE;
-        }
-
-        return selectLine + fromLine + filterLines;
+    public String toSql(ISqlDialect sqlDialect) {
+        return sqlDialect.render(this);
     }
 }

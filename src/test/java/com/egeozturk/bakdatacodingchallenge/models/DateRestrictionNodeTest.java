@@ -9,6 +9,7 @@ import com.egeozturk.bakdatacodingchallenge.models.filters.EqualFilter;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 import com.egeozturk.bakdatacodingchallenge.models.nodes.DateRestrictionNode;
 import com.egeozturk.bakdatacodingchallenge.models.nodes.QueryNode;
+import com.egeozturk.bakdatacodingchallenge.sql.dialects.PostgreSqlDialect;
 
 class DateRestrictionNodeTest {
 
@@ -27,7 +28,7 @@ class DateRestrictionNodeTest {
 
         DateRestrictionNode node = new DateRestrictionNode("dateColumn", "2022", "2021", child);
 
-        String sqlString = node.toSql();
+        String sqlString = node.toSql(new PostgreSqlDialect());
         String expectedString = 
         """
         SELECT *

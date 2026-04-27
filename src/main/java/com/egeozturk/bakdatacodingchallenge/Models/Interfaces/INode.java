@@ -1,12 +1,7 @@
 package com.egeozturk.bakdatacodingchallenge.models.interfaces;
 
-public interface INode {
-    String SELECT = "SELECT";
-    String FROM = "FROM";
-    String WHERE = "WHERE";
-    String AND = "AND";
-    String BIG_SPACE = "    ";
-    String NEXT_LINE = "\n";
+import com.egeozturk.bakdatacodingchallenge.sql.ISqlDialect;
 
-    public String toSql();
+public interface INode {
+    public String toSql(ISqlDialect sqlDialect);
 }
