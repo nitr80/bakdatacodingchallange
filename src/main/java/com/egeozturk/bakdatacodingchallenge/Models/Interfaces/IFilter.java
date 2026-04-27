@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.Models.Interfaces;
+package com.egeozturk.bakdatacodingchallenge.models.interfaces;
 
 public interface IFilter {
 

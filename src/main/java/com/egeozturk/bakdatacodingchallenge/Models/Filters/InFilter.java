@@ -1,9 +1,9 @@
-package com.egeozturk.bakdatacodingchallenge.Models.Filters;
+package com.egeozturk.bakdatacodingchallenge.models.filters;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 
 public record InFilter (
     String column,

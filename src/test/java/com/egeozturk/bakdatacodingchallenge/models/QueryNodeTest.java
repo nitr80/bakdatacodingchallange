@@ -1,14 +1,14 @@
-package com.egeozturk.bakdatacodingchallenge.NodeTests;
+package com.egeozturk.bakdatacodingchallenge.models;
 
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import com.egeozturk.bakdatacodingchallenge.Models.Filters.EqualFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Filters.InFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Nodes.QueryNode;
+import com.egeozturk.bakdatacodingchallenge.models.filters.EqualFilter;
+import com.egeozturk.bakdatacodingchallenge.models.filters.InFilter;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.models.nodes.QueryNode;
 
 public class QueryNodeTest {
 

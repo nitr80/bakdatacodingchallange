@@ -1,14 +1,14 @@
-package com.egeozturk.bakdatacodingchallenge.Mappers.Node;
+package com.egeozturk.bakdatacodingchallenge.mappers.node;
 
 import java.util.List;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Nodes.BaseNodeDto;
-import com.egeozturk.bakdatacodingchallenge.DTOs.Nodes.QueryNodeDto;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
-import com.egeozturk.bakdatacodingchallenge.Models.Nodes.QueryNode;
-import com.egeozturk.bakdatacodingchallenge.Registeries.FilterMapperRegistery;
-import com.egeozturk.bakdatacodingchallenge.Types.NodeType;
+import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
+import com.egeozturk.bakdatacodingchallenge.dtos.nodes.QueryNodeDto;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
+import com.egeozturk.bakdatacodingchallenge.models.nodes.QueryNode;
+import com.egeozturk.bakdatacodingchallenge.registeries.FilterMapperRegistery;
+import com.egeozturk.bakdatacodingchallenge.types.NodeType;
 
 public class QueryNodeMapper implements INodeMapper {
 

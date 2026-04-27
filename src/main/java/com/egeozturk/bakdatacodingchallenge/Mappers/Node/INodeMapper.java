@@ -1,7 +1,7 @@
-package com.egeozturk.bakdatacodingchallenge.Mappers.Node;
+package com.egeozturk.bakdatacodingchallenge.mappers.node;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Nodes.BaseNodeDto;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
+import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
 
 public interface INodeMapper {
     String getType();

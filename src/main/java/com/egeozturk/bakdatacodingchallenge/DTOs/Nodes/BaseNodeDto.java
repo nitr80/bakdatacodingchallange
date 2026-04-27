@@ -1,6 +1,7 @@
-package com.egeozturk.bakdatacodingchallenge.DTOs.Nodes;
+package com.egeozturk.bakdatacodingchallenge.dtos.nodes;
 
-import com.egeozturk.bakdatacodingchallenge.Types.NodeType;
+
+import com.egeozturk.bakdatacodingchallenge.types.NodeType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 

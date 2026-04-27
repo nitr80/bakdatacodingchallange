@@ -1,8 +1,8 @@
-package com.egeozturk.bakdatacodingchallenge.DTOs.Nodes;
+package com.egeozturk.bakdatacodingchallenge.dtos.nodes;
 
 import java.util.List;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Filters.BaseFilterDto;
+import com.egeozturk.bakdatacodingchallenge.dtos.filters.BaseFilterDto;
 
 public class QueryNodeDto extends BaseNodeDto {
     private String table;

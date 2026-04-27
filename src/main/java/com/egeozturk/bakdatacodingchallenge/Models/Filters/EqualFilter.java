@@ -1,6 +1,6 @@
-package com.egeozturk.bakdatacodingchallenge.Models.Filters;
+package com.egeozturk.bakdatacodingchallenge.models.filters;
 
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 
 public record EqualFilter (
     String column,

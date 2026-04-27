@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.DTOs.Filters;
+package com.egeozturk.bakdatacodingchallenge.dtos.filters;
 
 public class EqualFilterDto extends BaseFilterDto {
     private String value;

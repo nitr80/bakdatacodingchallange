@@ -1,10 +1,10 @@
-package com.egeozturk.bakdatacodingchallenge.Models.Nodes;
+package com.egeozturk.bakdatacodingchallenge.models.nodes;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
 
 public record QueryNode (
     List<IFilter> filterList,

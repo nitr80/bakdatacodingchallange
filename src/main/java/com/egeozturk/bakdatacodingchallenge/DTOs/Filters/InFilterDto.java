@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.DTOs.Filters;
+package com.egeozturk.bakdatacodingchallenge.dtos.filters;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.egeozturk.bakdatacodingchallenge.Controllers;
+package com.egeozturk.bakdatacodingchallenge.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.egeozturk.bakdatacodingchallenge.Services.Interfaces.ISqlService;
+import com.egeozturk.bakdatacodingchallenge.services.interfaces.ISqlService;
 
 @RestController
 @RequestMapping("/sql")

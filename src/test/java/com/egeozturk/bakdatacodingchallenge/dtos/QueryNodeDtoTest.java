@@ -1,10 +1,10 @@
-package com.egeozturk.bakdatacodingchallenge.DtoTests;
+package com.egeozturk.bakdatacodingchallenge.dtos;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Nodes.BaseNodeDto;
-import com.egeozturk.bakdatacodingchallenge.DTOs.Nodes.QueryNodeDto;
+import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
+import com.egeozturk.bakdatacodingchallenge.dtos.nodes.QueryNodeDto;
 
 import tools.jackson.databind.ObjectMapper;
 

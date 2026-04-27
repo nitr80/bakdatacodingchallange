@@ -1,7 +1,7 @@
-package com.egeozturk.bakdatacodingchallenge.Mappers.Filter;
+package com.egeozturk.bakdatacodingchallenge.mappers.filter;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Filters.BaseFilterDto;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.dtos.filters.BaseFilterDto;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 
 public interface IFilterMapper {
     String getType();

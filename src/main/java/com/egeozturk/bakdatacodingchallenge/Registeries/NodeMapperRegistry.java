@@ -1,13 +1,13 @@
-package com.egeozturk.bakdatacodingchallenge.Registeries;
+package com.egeozturk.bakdatacodingchallenge.registeries;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Nodes.BaseNodeDto;
-import com.egeozturk.bakdatacodingchallenge.Mappers.Node.DateRestrictionNodeMapper;
-import com.egeozturk.bakdatacodingchallenge.Mappers.Node.INodeMapper;
-import com.egeozturk.bakdatacodingchallenge.Mappers.Node.QueryNodeMapper;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
+import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
+import com.egeozturk.bakdatacodingchallenge.mappers.node.DateRestrictionNodeMapper;
+import com.egeozturk.bakdatacodingchallenge.mappers.node.INodeMapper;
+import com.egeozturk.bakdatacodingchallenge.mappers.node.QueryNodeMapper;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
 
 public class NodeMapperRegistry {
     private static final Map<String, INodeMapper> mappers = new HashMap<>();

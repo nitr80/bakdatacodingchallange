@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.DTOs.Nodes;
+package com.egeozturk.bakdatacodingchallenge.dtos.nodes;
 
 import jakarta.annotation.Nullable;
 

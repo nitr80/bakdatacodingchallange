@@ -1,6 +1,6 @@
-package com.egeozturk.bakdatacodingchallenge.Models.Nodes;
+package com.egeozturk.bakdatacodingchallenge.models.nodes;
 
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
 
 import jakarta.annotation.Nullable;
 

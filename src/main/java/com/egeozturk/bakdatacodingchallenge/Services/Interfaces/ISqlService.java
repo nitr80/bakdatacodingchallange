@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.Services.Interfaces;
+package com.egeozturk.bakdatacodingchallenge.services.interfaces;
 
 public interface ISqlService {
 

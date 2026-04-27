@@ -1,18 +1,18 @@
-package com.egeozturk.bakdatacodingchallenge.RegisteryTests;
+package com.egeozturk.bakdatacodingchallenge.registery;
 
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Nodes.BaseNodeDto;
-import com.egeozturk.bakdatacodingchallenge.Models.Filters.EqualFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Filters.InFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.INode;
-import com.egeozturk.bakdatacodingchallenge.Models.Nodes.DateRestrictionNode;
-import com.egeozturk.bakdatacodingchallenge.Models.Nodes.QueryNode;
-import com.egeozturk.bakdatacodingchallenge.Registeries.NodeMapperRegistry;
+import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
+import com.egeozturk.bakdatacodingchallenge.models.filters.EqualFilter;
+import com.egeozturk.bakdatacodingchallenge.models.filters.InFilter;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
+import com.egeozturk.bakdatacodingchallenge.models.nodes.DateRestrictionNode;
+import com.egeozturk.bakdatacodingchallenge.models.nodes.QueryNode;
+import com.egeozturk.bakdatacodingchallenge.registeries.NodeMapperRegistry;
 
 import tools.jackson.databind.ObjectMapper;
 

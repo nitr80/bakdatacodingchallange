@@ -1,6 +1,6 @@
-package com.egeozturk.bakdatacodingchallenge.DTOs.Filters;
+package com.egeozturk.bakdatacodingchallenge.dtos.filters;
 
-import com.egeozturk.bakdatacodingchallenge.Types.FilterType;
+import com.egeozturk.bakdatacodingchallenge.types.FilterType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 

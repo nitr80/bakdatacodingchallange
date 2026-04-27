@@ -1,13 +1,13 @@
-package com.egeozturk.bakdatacodingchallenge.Registeries;
+package com.egeozturk.bakdatacodingchallenge.registeries;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.egeozturk.bakdatacodingchallenge.DTOs.Filters.BaseFilterDto;
-import com.egeozturk.bakdatacodingchallenge.Mappers.Filter.EqualFilterMapper;
-import com.egeozturk.bakdatacodingchallenge.Mappers.Filter.IFilterMapper;
-import com.egeozturk.bakdatacodingchallenge.Mappers.Filter.InFilterMapper;
-import com.egeozturk.bakdatacodingchallenge.Models.Interfaces.IFilter;
+import com.egeozturk.bakdatacodingchallenge.dtos.filters.BaseFilterDto;
+import com.egeozturk.bakdatacodingchallenge.mappers.filter.EqualFilterMapper;
+import com.egeozturk.bakdatacodingchallenge.mappers.filter.IFilterMapper;
+import com.egeozturk.bakdatacodingchallenge.mappers.filter.InFilterMapper;
+import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 
 public class FilterMapperRegistery {
     private static final Map<String, IFilterMapper> mappers = new HashMap<>();
