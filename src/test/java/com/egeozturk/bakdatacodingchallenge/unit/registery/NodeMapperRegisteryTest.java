@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.registery;
+package com.egeozturk.bakdatacodingchallenge.unit.registery;
 
 import java.util.ArrayList;
 

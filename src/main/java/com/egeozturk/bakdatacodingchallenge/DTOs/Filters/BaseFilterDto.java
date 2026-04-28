@@ -4,6 +4,8 @@ import com.egeozturk.bakdatacodingchallenge.types.FilterType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
+import jakarta.validation.constraints.NotNull;
+
 @JsonTypeInfo(
     use= JsonTypeInfo.Id.NAME,
     include= JsonTypeInfo.As.EXISTING_PROPERTY,
@@ -15,6 +17,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
     @JsonSubTypes.Type(value= EqualFilterDto.class, name= "EQUAL")
 })
 public abstract class BaseFilterDto {
+    @NotNull
     private FilterType type;
 
     public FilterType getType() {

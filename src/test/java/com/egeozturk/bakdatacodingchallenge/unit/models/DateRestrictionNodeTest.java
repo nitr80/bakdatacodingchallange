@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.models;
+package com.egeozturk.bakdatacodingchallenge.unit.models;
 
 import java.util.ArrayList;
 
@@ -34,9 +34,8 @@ class DateRestrictionNodeTest {
         SELECT *
         FROM table1
         WHERE column1 = 'a'
-            AND dateColumn >= to_date('2021')
-            AND dateColumn <= to_date('2022')
-        """;
+            AND dateColumn >= to_date('2021', 'YYYY')
+            AND dateColumn <= to_date('2022', 'YYYY')""";
 
         assertEquals(
             expectedString,

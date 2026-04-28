@@ -5,6 +5,8 @@ import com.egeozturk.bakdatacodingchallenge.types.NodeType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
+import jakarta.validation.constraints.NotNull;
+
 @JsonTypeInfo(
     use= JsonTypeInfo.Id.NAME,
     include= JsonTypeInfo.As.EXISTING_PROPERTY,
@@ -16,6 +18,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
     @JsonSubTypes.Type(value= DateRestrictionNodeDto.class, name= "DATE_RESTRICTION")
 })
 public abstract class BaseNodeDto {
+    @NotNull
     private NodeType type;
 
     public NodeType getType() {

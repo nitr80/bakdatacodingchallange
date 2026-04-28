@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.models;
+package com.egeozturk.bakdatacodingchallenge.unit.models;
 
 import java.util.ArrayList;
 
@@ -35,8 +35,7 @@ public class QueryNodeTest {
         SELECT *
         FROM table1
         WHERE column1 = 'a'
-            AND column2 IN ('b', 'c')
-        """;
+            AND column2 IN ('b', 'c')""";
 
         assertEquals(
             expectedString,
