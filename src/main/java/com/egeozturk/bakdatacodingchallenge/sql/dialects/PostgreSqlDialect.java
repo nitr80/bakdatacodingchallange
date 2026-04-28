@@ -58,15 +58,16 @@ public class PostgreSqlDialect implements ISqlDialect {
         if (node.maxDate() != null) {
             dateFilterLineList.add(toSqlDateFilter(LESS_EQUAL, node.maxDate(), node.column()));
         }
-
+        
         String dateFilterLinesString = String.join(FILTER_LINE_SEPERATOR, dateFilterLineList);
 
-        if (childQueryString.contains(WHERE)) {
-            childQueryString += FILTER_LINE_SEPERATOR + dateFilterLinesString;
-        } else {
-            childQueryString += WHERE + " " + dateFilterLinesString;
+        if (!dateFilterLineList.isEmpty()) {
+            if (childQueryString.contains(WHERE)) {
+                childQueryString += FILTER_LINE_SEPERATOR + dateFilterLinesString;
+            } else {
+                childQueryString += WHERE + " " + dateFilterLinesString;
+            }
         }
-
 
         return childQueryString;
     }
