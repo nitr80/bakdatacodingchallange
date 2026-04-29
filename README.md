@@ -4,7 +4,7 @@
 This project is a Java + Spring Boot REST API that accepts a graph-like JSON query structure, translates it into SQL, executes it against a SQL database, and returns the result.
 
 ## Creating the Database
-If you want to use same database as mine you can follow these steps:
+If you want to use the same database as mine you can follow these steps:
 First, create a table:
 ```
 CREATE TABLE table1 (
@@ -36,8 +36,8 @@ APP_SQL_DIALECT=postgres \
 ./mvnw spring-boot:run 
 ```
 
-- Make sure you entered PORT, DATABASE_NAME, LOCAL_USER and PASSWORD correctly. If your database doesn't have a password, you can leave it empty
-- Run the project
+- Make sure you have entered PORT, DATABASE_NAME, LOCAL_USER and PASSWORD correctly. If your database doesn't have a password, you can leave it empty.
+- Run the project.
 
 ### Alternative
 If the database cannot be connected for some reason, you can also try typing the same information directly into the `application.properties` file.
@@ -49,6 +49,10 @@ spring.datasource.username=${DB_USER:egeozturk}
 spring.datasource.password=${DB_PASSWORD:}
 
 app.sql.dialect=${APP_SQL_DIALECT:postgres}
+```
+Now you can run the project without any arguments:
+```
+./mvnw spring-boot:run
 ```
 
 ## Sending Requests
