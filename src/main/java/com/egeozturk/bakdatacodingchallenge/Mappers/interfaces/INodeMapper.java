@@ -1,4 +1,4 @@
-package com.egeozturk.bakdatacodingchallenge.mappers.node;
+package com.egeozturk.bakdatacodingchallenge.mappers.interfaces;
 
 import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;

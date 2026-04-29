@@ -2,6 +2,7 @@ package com.egeozturk.bakdatacodingchallenge.mappers.filter;
 
 import com.egeozturk.bakdatacodingchallenge.dtos.filters.BaseFilterDto;
 import com.egeozturk.bakdatacodingchallenge.dtos.filters.InFilterDto;
+import com.egeozturk.bakdatacodingchallenge.mappers.interfaces.IFilterMapper;
 import com.egeozturk.bakdatacodingchallenge.models.filters.InFilter;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 import com.egeozturk.bakdatacodingchallenge.types.FilterType;

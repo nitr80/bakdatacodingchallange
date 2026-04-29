@@ -2,6 +2,7 @@ package com.egeozturk.bakdatacodingchallenge.mappers.node;
 
 import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
 import com.egeozturk.bakdatacodingchallenge.dtos.nodes.DateRestrictionNodeDto;
+import com.egeozturk.bakdatacodingchallenge.mappers.interfaces.INodeMapper;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
 import com.egeozturk.bakdatacodingchallenge.models.nodes.DateRestrictionNode;
 import com.egeozturk.bakdatacodingchallenge.models.nodes.QueryNode;

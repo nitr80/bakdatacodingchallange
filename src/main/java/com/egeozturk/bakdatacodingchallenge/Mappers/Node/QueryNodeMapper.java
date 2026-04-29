@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
 import com.egeozturk.bakdatacodingchallenge.dtos.nodes.QueryNodeDto;
+import com.egeozturk.bakdatacodingchallenge.mappers.interfaces.INodeMapper;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
 import com.egeozturk.bakdatacodingchallenge.models.nodes.QueryNode;

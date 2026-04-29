@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.egeozturk.bakdatacodingchallenge.dtos.nodes.BaseNodeDto;
+import com.egeozturk.bakdatacodingchallenge.mappers.interfaces.INodeMapper;
 import com.egeozturk.bakdatacodingchallenge.mappers.node.DateRestrictionNodeMapper;
-import com.egeozturk.bakdatacodingchallenge.mappers.node.INodeMapper;
 import com.egeozturk.bakdatacodingchallenge.mappers.node.QueryNodeMapper;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.INode;
 

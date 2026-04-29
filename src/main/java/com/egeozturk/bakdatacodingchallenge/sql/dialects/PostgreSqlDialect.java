@@ -16,7 +16,9 @@ public class PostgreSqlDialect implements ISqlDialect {
     private final String FROM = "FROM";
     private final String WHERE = "WHERE";
     private final String AND = "AND";
-    private final String DATE_FORMAT = "'YYYY'";
+    private final String DATE_FORMAT = "'YYYY-MM-DD'";
+    private final String FIRST_DAY = "-01-01";
+    private final String LAST_DAY = "-12-31";
     private final String BIG_SPACE = "    ";
     private final String NEXT_LINE = "\n";
     private final String FILTER_LINE_SEPERATOR = NEXT_LINE + BIG_SPACE + AND + " ";
@@ -52,11 +54,11 @@ public class PostgreSqlDialect implements ISqlDialect {
         List<String> dateFilterLineList = new ArrayList<>();
 
         if (node.minDate() != null) {
-            dateFilterLineList.add(toSqlDateFilter(GREATER_EQUAL, node.minDate(), node.column()));
+            dateFilterLineList.add(toSqlDateFilter(GREATER_EQUAL, node.minDate(), node.column(), FIRST_DAY));
         }
 
         if (node.maxDate() != null) {
-            dateFilterLineList.add(toSqlDateFilter(LESS_EQUAL, node.maxDate(), node.column()));
+            dateFilterLineList.add(toSqlDateFilter(LESS_EQUAL, node.maxDate(), node.column(), LAST_DAY));
         }
         
         String dateFilterLinesString = String.join(FILTER_LINE_SEPERATOR, dateFilterLineList);
@@ -72,9 +74,9 @@ public class PostgreSqlDialect implements ISqlDialect {
         return childQueryString;
     }
 
-    private String toSqlDateFilter(String filterKeyword, String date, String column) {
+    private String toSqlDateFilter(String filterKeyword, String date, String column, String day) {
         final String TO_DATE = "to_date";
-        return column + " " + filterKeyword + " " + TO_DATE + "(" + "'" + date + "'" + "," + " " + DATE_FORMAT + ")";
+        return column + " " + filterKeyword + " " + TO_DATE + "(" + "'" + date + day + "'" + "," + " " + DATE_FORMAT + ")";
     }
 
 

@@ -34,8 +34,8 @@ class DateRestrictionNodeTest {
         SELECT *
         FROM table1
         WHERE column1 = 'a'
-            AND dateColumn >= to_date('2021', 'YYYY')
-            AND dateColumn <= to_date('2022', 'YYYY')""";
+            AND dateColumn >= to_date('2021-01-01', 'YYYY-MM-DD')
+            AND dateColumn <= to_date('2022-12-31', 'YYYY-MM-DD')""";
 
         assertEquals(
             expectedString,

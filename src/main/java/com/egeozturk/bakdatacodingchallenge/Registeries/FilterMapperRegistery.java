@@ -5,8 +5,8 @@ import java.util.Map;
 
 import com.egeozturk.bakdatacodingchallenge.dtos.filters.BaseFilterDto;
 import com.egeozturk.bakdatacodingchallenge.mappers.filter.EqualFilterMapper;
-import com.egeozturk.bakdatacodingchallenge.mappers.filter.IFilterMapper;
 import com.egeozturk.bakdatacodingchallenge.mappers.filter.InFilterMapper;
+import com.egeozturk.bakdatacodingchallenge.mappers.interfaces.IFilterMapper;
 import com.egeozturk.bakdatacodingchallenge.models.interfaces.IFilter;
 
 public class FilterMapperRegistery {

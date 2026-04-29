@@ -260,11 +260,11 @@ public class QueryControllerIntegrationTest {
         "filters": [
             {
             "type": "EQUAL",
-            "column": "column4",
+            "column": "column44",
             "value": "a"
             }
         ],
-        "select": ["column12"]
+        "select": ["column1"]
         }
         """;
 
@@ -312,6 +312,57 @@ public class QueryControllerIntegrationTest {
             "type": "EQUAL",
             "column": "column4",
             "value": "a"
+            }
+        ],
+        "select": ["column1"]
+        }
+        """;
+
+
+        mockMvc.perform(post("/sql/query")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(requestJson))
+            .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    void shouldThrowBadRequest_queryNodeWithoutFilterColumn() throws Exception {
+
+        String requestJson = 
+        """
+        {
+        "type": "QUERY",
+        "table": "table1"
+        "filters": [
+            {
+            "type": "EQUAL",
+            "value": "a"
+            }
+        ],
+        "select": ["column1"]
+        }
+        """;
+
+
+        mockMvc.perform(post("/sql/query")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(requestJson))
+            .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    void shouldThrowBadRequest_queryNodeWithEmptyInFilterValues() throws Exception {
+
+        String requestJson = 
+        """
+        {
+        "type": "QUERY",
+        "table": "table1"
+        "filters": [
+            {
+            "type": "IN",
+            "column": "column4",
+            "values": []
             }
         ],
         "select": ["column1"]
