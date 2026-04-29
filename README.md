@@ -3,6 +3,27 @@
 ## Overview
 This project is a Java + Spring Boot REST API that accepts a graph-like JSON query structure, translates it into SQL, executes it against a SQL database, and returns the result.
 
+## Creating the Database
+If you want to use same database as mine you can follow these steps:
+First, create a table:
+```
+CREATE TABLE table1 (
+    column1 TEXT,
+    column2 TEXT,
+    column3 TEXT,
+    column4 TEXT,
+    dateColumn DATE
+);
+```
+Then put the sample data into the table1:
+```
+INSERT INTO table1 (column1, column2, column3, column4, dateColumn)
+VALUES
+('value1', 'value2', 'foo', 'a', '2021-05-01'),
+('value3', 'value4', 'bar', 'a', '2022-03-15'),
+('value5', 'value6', 'baz', 'b', '2023-01-10');
+```
+
 ## Running the API
 - Make sure you have installed Java 21+ and Maven.
 - Create a locally running PostreSQL database.
